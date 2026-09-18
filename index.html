@@ -142,10 +142,13 @@ nav {
   pointer-events: none;
 }
 @media (max-width: 860px) {
-  #hero { grid-template-columns: 1fr; grid-template-rows: auto; min-height: auto; padding-bottom: 2.5rem; }
+  #hero { grid-template-columns: 1fr; grid-template-rows: auto; min-height: auto; padding: 1.5rem 1.5rem 2rem; gap: 1.2rem; }
   .hero-text { grid-column: 1; grid-row: 1; }
-  .video-wrap { grid-column: 1; grid-row: 2; max-height: 56vw; overflow: hidden; border-radius: 12px; }
+  .video-wrap { grid-column: 1; grid-row: 2; max-height: 52vw; overflow: hidden; border-radius: 10px; }
   .hero-illustration { display: none; }
+  .hero-h1 { font-size: clamp(2.6rem, 9vw, 3.8rem); }
+  .hero-tagline { margin-top: .9rem; }
+  .hero-cta { margin-top: 1.4rem; }
 }
 
 .hero-eyebrow {
