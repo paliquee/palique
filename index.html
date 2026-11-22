@@ -911,7 +911,6 @@ if('scrollRestoration' in history) history.scrollRestoration='manual';
 window.addEventListener('load',function(){window.scrollTo(0,0);});
 (function(){
   var key='palique_popup_v2';
-  if(sessionStorage.getItem(key)) return;
   var overlay=document.getElementById('popup-overlay');
   function showPopup(){
     overlay.style.display='flex';
