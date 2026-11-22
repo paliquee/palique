@@ -143,6 +143,19 @@ nav {
   pointer-events: none;
 }
 @media (max-width: 860px) {
+  nav { padding: 0 1rem; height: auto; min-height: 52px; flex-wrap: wrap; gap: 0; }
+  .nav-brand { padding: .6rem 0; }
+  .nav-links { gap: .8rem; padding: .5rem 0 .6rem; width: 100%; border-top: 1px solid var(--border); flex-wrap: wrap; justify-content: center; }
+  .nav-links a { font-size: .72rem; }
+  #popup-card { max-width: 95vw; border-radius: 14px; }
+  .popup-fan { height: 160px; }
+  .fan-card { width: 72px; height: 128px; }
+  .fan-1 { transform: rotate(-28deg) translateX(-96px); }
+  .fan-2 { transform: rotate(-14deg) translateX(-48px); }
+  .fan-4 { transform: rotate(14deg) translateX(48px); }
+  .fan-5 { transform: rotate(28deg) translateX(96px); }
+  .popup-body { padding: 1.2rem 1.2rem 1.5rem; }
+  .popup-title { font-size: 1.35rem; }
   #hero { grid-template-columns: 1fr; grid-template-rows: auto; min-height: auto; padding: 1.5rem 1.5rem 2rem; gap: 1.2rem; }
   .hero-text { grid-column: 1; grid-row: 1; }
   .video-wrap { grid-column: 1; grid-row: 2; height: 220px; overflow: hidden; border-radius: 10px; }
