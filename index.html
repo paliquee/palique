@@ -898,7 +898,7 @@ if('scrollRestoration' in history) history.scrollRestoration='manual';
 window.addEventListener('load',function(){window.scrollTo(0,0);});
 (function(){
   var key='palique_popup_v2';
-  if(localStorage.getItem(key)) return;
+  if(sessionStorage.getItem(key)) return;
   var overlay=document.getElementById('popup-overlay');
   function showPopup(){
     overlay.style.display='flex';
@@ -913,16 +913,16 @@ window.addEventListener('load',function(){window.scrollTo(0,0);});
   function closePopup(){
     overlay.classList.remove('visible');
     document.body.style.overflow='';
-    localStorage.setItem(key,'1');
+    sessionStorage.setItem(key,'1');
     setTimeout(function(){overlay.style.display='none';},400);
   }
   document.getElementById('popup-close').addEventListener('click',closePopup);
   overlay.addEventListener('click',function(e){if(e.target===overlay)closePopup();});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closePopup();});
   if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',function(){setTimeout(showPopup,2500);});
+    document.addEventListener('DOMContentLoaded',function(){setTimeout(showPopup,1000);});
   } else {
-    setTimeout(showPopup,2500);
+    setTimeout(showPopup,1000);
   }
 })();
 </script>
