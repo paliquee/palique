@@ -894,6 +894,8 @@ footer {
 </style>
 
 <script>
+if('scrollRestoration' in history) history.scrollRestoration='manual';
+window.addEventListener('load',function(){window.scrollTo(0,0);});
 (function(){
   var key='palique_popup_v2';
   if(localStorage.getItem(key)) return;
